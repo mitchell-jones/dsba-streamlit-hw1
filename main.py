@@ -6,6 +6,7 @@ Created on Thu Nov  3 19:03:11 2022
 """
 
 import streamlit as st
+st.set_page_config(layout="wide")
 import pandas as pd
 import altair as alt
 
@@ -16,6 +17,8 @@ with col1:
 
 with col2:
     st.header('County-level Health Data for NC')
+    url = 'https://nciom.org/nc-health-data/map/'
+    st.write(f'Data obtained from: {url}')
 
 with col3:
     st.write(' ')
